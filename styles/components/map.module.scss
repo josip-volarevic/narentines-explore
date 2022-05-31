@@ -1,0 +1,34 @@
+html,
+body,
+#__next {
+	height: 100%;
+}
+
+.map-scroll-container {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+@media (orientation: portrait) {
+	.react-transform-component {
+		max-height: 100% !important;
+		height: 100% !important;
+	}
+
+	.map-image {
+		height: 100% !important;
+		width: auto !important;
+	}
+}
+
+@media (orientation: landscape) {
+	.react-transform-component {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
+	.map-image {
+		height: auto !important;
+		width: 100% !important;
+	}
+}
