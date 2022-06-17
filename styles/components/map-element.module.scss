@@ -1,0 +1,49 @@
+@use '../mixins/animations.module.scss' as *;
+@use '../mixins/breakpoints.module.scss' as *;
+@use '../mixins/common.module.scss' as *;
+
+.map-element {
+	cursor: pointer;
+
+	@include defaultFadeIn;
+}
+
+.dialog-paper {
+	@include xs {
+		max-width: unset;
+		position: absolute !important;
+		width: 100% !important;
+		bottom: 0 !important;
+		margin: 2rem 0 0 0 !important;
+		border-bottom-width: 0;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+}
+
+.dialog-close-button {
+	position: absolute !important;
+
+	width: 32px;
+	height: 32px;
+	top: -3rem;
+	right: 1rem;
+
+	@include clickable;
+
+	@include sm {
+		width: 36px;
+		height: 36px;
+		top: -1rem;
+		right: -1rem;
+	}
+
+	@include md {
+		top: -3rem;
+		right: -3rem;
+	}
+}
+
+.dialog-text {
+	white-space: pre-line;
+}

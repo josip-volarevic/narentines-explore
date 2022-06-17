@@ -13,7 +13,7 @@ const defaultTheme = createTheme({
 		},
 	},
 	typography: {
-		fontSize: 18,
+		fontSize: 16,
 		fontFamily: 'Eczar',
 		body1: { fontWeight: 500 },
 		body2: { fontWeight: 500, fontFamily: 'Archivo Narrow' },
@@ -49,6 +49,7 @@ const defaultTheme = createTheme({
 		MuiButton: {
 			styleOverrides: {
 				root: {
+					minWidth: 'unset',
 					textTransform: 'none',
 					'&.Mui-disabled': {
 						backgroundColor: variables.primaryColor,
@@ -60,7 +61,6 @@ const defaultTheme = createTheme({
 					borderRadius: '2rem',
 					boxShadow: '4px 2px rgba(0,0,0,0.9)',
 					border: '2px solid black',
-					minWidth: '40px',
 					padding: '2px 8px',
 					textTransform: 'none',
 					fontWeight: 'bold',
@@ -76,6 +76,27 @@ const defaultTheme = createTheme({
 			styleOverrides: {
 				root: {
 					borderRadius: '0.4rem',
+				},
+			},
+		},
+		MuiDialog: {
+			styleOverrides: {
+				paper: {
+					maxHeight: 'calc(100% - 128px)',
+					overflow: 'visible',
+					overflowY: 'visible',
+					overflowX: 'visible',
+					boxShadow: '6px 6px rgba(0,0,0,0.9)',
+				},
+			},
+		},
+		MuiPaper: {
+			styleOverrides: {
+				root: {
+					backgroundImage: "url('/assets/ui/theme-texture.png')",
+					borderRadius: '0',
+					backgroundColor: variables.primaryColor,
+					border: '2px solid black',
 				},
 			},
 		},
