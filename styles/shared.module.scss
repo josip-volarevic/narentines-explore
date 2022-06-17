@@ -2,10 +2,33 @@
 @use 'mixins/common.module.scss' as *;
 @use 'mixins/breakpoints.module.scss' as *;
 
+html,
+body,
+#__next {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: overlay;
+}
+
+svg {
+	fill: black;
+
+	width: 16px;
+	height: 16px;
+
+	@include sm {
+		width: 20px;
+		height: 20px;
+	}
+
+	@include md {
+		width: 24px;
+		height: 24px;
+	}
 }
 
 .text--important {

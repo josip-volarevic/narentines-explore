@@ -29,10 +29,18 @@ class MyDocument extends Document {
 
 					<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
 
+					{/* Load Leaflet styles */}
+					<link
+						rel='stylesheet'
+						href='https://unpkg.com/leaflet@1.8.0/dist/leaflet.css'
+						integrity='sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=='
+						crossOrigin=''
+					/>
+
 					{/* Preload Eczar font */}
 					<link
-						rel='preload'
-						as='style'
+						// rel='preload'
+						as='font'
 						href='https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap'
 					/>
 					<link
@@ -42,8 +50,8 @@ class MyDocument extends Document {
 
 					{/* Preload Archivo Narrow font */}
 					<link
-						rel='preload'
-						as='style'
+						// rel='preload'
+						as='font'
 						href='https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Eczar:wght@400;500&display=swap'
 					/>
 					<link
